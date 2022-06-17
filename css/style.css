@@ -28,6 +28,68 @@ ul, ol{
 img{
     max-width: 100%;
 }
+.container-fluid{
+    padding: 0 15px;
+    margin: auto;
+
+}
+.header{
+    overflow: hidden;
+    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.header .logo{
+    float: left;
+}
+.header .header-nav{
+    float: right;
+}
+.header .header-nav li{
+    float: left;
+    line-height: 21px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.header .header-nav li + li{
+    margin-left: 33px;
+}
+.inner{
+    background: url('../img/fon-1.jpg') no-repeat center / cover;
+    height: 100vh;
+    text-align: center;
+    padding-top: 83px;
+    position: relative;
+}
+.inner::before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: -4px;
+}
+.inner-content{
+    display: inline-block;
+    vertical-align: middle;
+}
+.inner h1{
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: #f5f5f5;
+    letter-spacing: 50px;
+    margin-bottom: 100px;
+}
+.inner span{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    color: #b9b9b9;
+    display: block;
+}
 button{
     outline: none;
     border: none;
