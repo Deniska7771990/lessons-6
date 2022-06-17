@@ -51,11 +51,18 @@ img{
 .header .header-nav li{
     float: left;
     line-height: 21px;
-    color: #fff;
+    color: rgba( 255, 255, 255, .75);
     text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: .3em;
+    font-weight: 400;
 }
 .header .header-nav li + li{
-    margin-left: 33px;
+    margin-left: 35px;
+}
+.header .header-nav li a:hover{
+    background-color: #fff;
+    color: #000;
 }
 .inner{
     background: url('../img/fon-1.jpg') no-repeat center / cover;
@@ -71,24 +78,55 @@ img{
     vertical-align: middle;
     margin-left: -4px;
 }
-.inner-content{
+.inner.inner-content{
     display: inline-block;
     vertical-align: middle;
+    color: #fff;
 }
-.inner h1{
+..inner.inner h1{
     font-family: 'Dosis', sans-serif;
     font-size: 30px;
     font-weight: 300;
-    color: #f5f5f5;
-    letter-spacing: 50px;
-    margin-bottom: 100px;
+    letter-spacing: 1.7em;
+    text-indent: 1.7em;
+    opacity: 0.9;
 }
-.inner span{
-    font-family: 'Open Sans',sans-serif;
+..inner.inner span{
     font-size: 19px;
-    font-weight: 300;
-    color: #b9b9b9;
+    margin-top: 100px;
     display: block;
+    opacity: 0.68;
+}
+/*.team-wrapper{
+    overflow: hidden;
+    width: 100%;
+}*/
+.team-item .team-item-img{
+    position: relative;
+}
+.team-item .team-item-skills{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: all .2s linear;
+}
+.team-item .team-item-img:hover .team-item-skills{
+    opacity: 1;
+}
+.team-item-info{
+    text-align: center;
+}
+.team-item-info span{
+    display: block;
+}
+.team-item-name{
+    margin: 0 0 15px;
+}
+.team-item-role{
+    margin: 0 0 15px;
 }
 button{
     outline: none;
@@ -116,6 +154,7 @@ blockquote{
 }
 .default-section{
     padding: 135px 0;
+   /* overflow: hidden;*/
 }
 .small-section{
     padding: 70px 0 ;
@@ -168,6 +207,7 @@ blockquote span,.blockquote span{
     display: inline-block;
 	padding: 12px 20px;
 	border-radius: 2px;
+    font-family: 'Open Sans';
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 400;
