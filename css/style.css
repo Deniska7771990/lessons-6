@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+*:focus{
+    outline: none;
+}
 body{
     margin: 0;
     background-color: #fff;
@@ -28,15 +31,22 @@ ul, ol{
 img{
     max-width: 100%;
 }
-.container-fluid{
-    padding: 0 15px;
-    margin: auto;
-
+input,
+textarea,
+button{
+    outline: none;
+    border: none;
+}
+textarea{
+    resize: vertical;
+}
+input[type="submit"]{
+    cursor: pointer;
 }
 .header{
     overflow: hidden;
     padding: 30px 0;
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
@@ -64,6 +74,9 @@ img{
     background-color: #fff;
     color: #000;
 }
+.guide-section form .form-control{
+    margin-bottom: 10px;
+}
 .inner{
     background: url('../img/fon-1.jpg') no-repeat center / cover;
     height: 100vh;
@@ -78,12 +91,12 @@ img{
     vertical-align: middle;
     margin-left: -4px;
 }
-.inner.inner-content{
+.inner .inner-content{
     display: inline-block;
     vertical-align: middle;
     color: #fff;
 }
-..inner.inner h1{
+.inner .inner-content h1{
     font-family: 'Dosis', sans-serif;
     font-size: 30px;
     font-weight: 300;
@@ -91,7 +104,7 @@ img{
     text-indent: 1.7em;
     opacity: 0.9;
 }
-..inner.inner span{
+.inner .inner-content span{
     font-size: 19px;
     margin-top: 100px;
     display: block;
@@ -101,6 +114,9 @@ img{
     overflow: hidden;
     width: 100%;
 }*/
+.default-section.about-studio{
+    border-bottom: 1px solid rgba( 236, 236, 236, .92);
+}
 .team-item .team-item-img{
     position: relative;
 }
@@ -121,6 +137,7 @@ img{
 }
 .team-item-info span{
     display: block;
+    margin-top: 15px;
 }
 .team-item-name{
     margin: 0 0 15px;
@@ -128,10 +145,44 @@ img{
 .team-item-role{
     margin: 0 0 15px;
 }
+.latest-news .title.section-title a{
+    float: right;
+    line-height: 22px;
+    color: #999;
+    font-size: 11px;
+    letter-spacing: 0.4em;
+}
+.latest-item .latest-item-img{
+    margin-bottom: 30px;
+    max-height: 100%;
+    filter: grayscale(100%);
+}
+.latest-item .latest-item-img:hover{
+    max-height: 100%;
+    filter: grayscale(0%);
+}
+.latest-item p{
+    margin-bottom: 30px;
+}
+.news-title{
+    margin-bottom: 25px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.news-title a{
+    display: block;
+    margin: 0 0 15px;
+}
+.news-title span{
+    font-size: 11px;
+    letter-spacing: 0.4em;
+    color: #999;
+}
 button{
-    outline: none;
-    border: none;
     cursor: pointer;
+    background: transparent;
 }
 blockquote{
     margin: 0;
@@ -143,7 +194,7 @@ blockquote{
 .text-right{
     text-align: right;
 }
-.text-justify{
+.text-juifyst{
     text-align: justify;
 }
 .bg-black{
@@ -211,6 +262,11 @@ blockquote span,.blockquote span{
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 400;
+    letter-spacing: .2em;
+}
+.btn[disabled]{
+    cursor: not-allowed;
+    opacity: .6;
 }
 .btn.btn-default {
 	background-color: #e5e5e5;
@@ -230,4 +286,81 @@ blockquote span,.blockquote span{
 	padding: 7px 15px;
 	font-size: 11px;
 }
+.form-control{
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    height: 36px;
+    font-size: 12px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: #777;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.form-control:focus{
+    border-color: #111;
+}
+textarea.form-control{
+    min-height: 82px;
+    padding-top: 10px;
+}
+.form-control[disabled]{
+    cursor: not-allowed;
+    opacity: .6;
+}
+.form-control.error{
+    border-color: #f57e7e;
+}
+.why-choose-us .row + .row{
+    margin-top: 75px;
+}
+.why-choose-us-item .icon{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.why-choose-us-item .icon-title{
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.4em;
+    margin-bottom: 30px;
+}
 /*==== Default component  end =====*/
+#tabs .tabs-nav{
+    margin-bottom: 75px;
+    overflow: hidden;
+}
+.tabs-nav-item{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.tabs-nav-item .icon{
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+.tabs-nav-item.ui-tabs-active .icon{
+    color: #000;
+}
+.tabs-nav-item .icon-title{
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .4em;
+}
+#tabs .tabs-nav li span{
+    display: block;
+}
+.lets-talk-content{
+    padding: 140px 0;
+}
+.lets-talk-content p{
+    color: rgba(255, 255, 255, .7);
+    margin-bottom: 35px;
+}
+.lets-talk .lets-talk-img{
+    margin-top: -32px;
+}
