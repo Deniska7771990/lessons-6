@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+
     <link rel="stylesheet" href="./css/et-line.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/grid.css">
@@ -22,11 +24,11 @@
                 </a>
             </div>
             <ul class="header-nav">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">WORKS</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#" data-scroll=".inner">HOME</a></li>
+                <li><a href="#" data-scroll=".about-studio">ABOUT</a></li>
+                <li><a href="#" data-scroll=".services">SERVICES</a></li>
+                <li><a href="#" data-scroll=".portfolio">WORKS</a></li>
+                <li><a href="#" data-scroll=".contacts">CONTACT</a></li>
             </ul>
         </div>
     </header>
@@ -35,7 +37,13 @@
             <div class="inner-content">
                 <h1>THOMAS RHYTHM</h1>
                 <span>Extraordinary art director & creative minimalism lover</span>
-                <button class="btn btn-default">значок</button>
+                <div class="inner-icon" data-scroll=".about-studio">
+                    <div class="inner-icon-content">
+                        <a href="#" class="rhomb-icon wnite-icon">
+                            <i class="fa fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="default-section about-studio">
@@ -67,7 +75,36 @@
                             <div class="team-item">
                                 <div class="team-item-img">
                                     <img src="./img/thomas.jpg" alt="">
-                                    <div class="team-item-skills"></div>
+                                    <div class="team-item-skills">
+                                        <div class="skills">
+                                            <span class="skills-title">Skills</span>
+                                            <p class="default-text">Curabitur iaculis accumsan augue, nec finibus mauris pretium eu. Duis placerat ex gravida nibh tristique porta.</p>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">Branding</span>
+                                            <div class="progress-wrapp">
+                                                <div class="progress branding"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">Design</span>
+                                            <div class="progress-wrapp">
+                                                <div class="progress design"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">Development</span>
+                                            <div class="progress-wrapp">
+                                                <div class="progress development"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">Photography</span>
+                                            <div class="progress-wrapp">
+                                                <div class="progress photography"></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="team-item-info">
                                     <span class="team-item-name">Thomas Rhythm</span>
@@ -80,7 +117,36 @@
                             <div class="team-item">
                                 <div class="team-item-img">
                                     <img src="./img/marta.jpg" alt="">
-                                    <div class="team-item-skills"></div>
+                                    <div class="team-item-skills">
+                                        <div class="skills">
+                                            <span class="skills-title">Skills</span>
+                                            <p class="default-text">Curabitur iaculis accumsan augue, nec finibus mauris pretium eu. Duis placerat ex gravida nibh tristique porta.</p>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">Branding</span>
+                                            <div class="progress-wrapp">
+                                                <div class="progress branding"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">Design</span>
+                                            <div class="progress-wrapp">
+                                                <div class="progress design"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">Development</span>
+                                            <div class="progress-wrapp">
+                                                <div class="progress development"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">Photography</span>
+                                            <div class="progress-wrapp">
+                                                <div class="progress photography"></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="team-item-info">
                                     <span class="team-item-name">Marta Laning</span>
@@ -93,7 +159,36 @@
                             <div class="team-item">
                                 <div class="team-item-img">
                                     <img src="./img/steve.jpg" alt="">
-                                    <div class="team-item-skills"></div>
+                                    <div class="team-item-skills">
+                                        <div class="skills">
+                                            <span class="skills-title">Skills</span>
+                                            <p class="default-text">Curabitur iaculis accumsan augue, nec finibus mauris pretium eu. Duis placerat ex gravida nibh tristique porta.</p>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">Branding</span>
+                                            <div class="progress-wrapp">
+                                                <div class="progress branding"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">Design</span>
+                                            <div class="progress-wrapp">
+                                                <div class="progress design"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">Development</span>
+                                            <div class="progress-wrapp">
+                                                <div class="progress development"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <span class="skill-name">Photography</span>
+                                            <div class="progress-wrapp">
+                                                <div class="progress photography"></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="team-item-info">
                                     <span class="team-item-name">Steve ANDERS</span>
@@ -266,6 +361,130 @@
                 </div>
             </div>
         </div>
+        <div class="portfolio">
+            <div class="portfolio default-section">
+                <div class="container">
+                    <div class="title section-title text-center">
+                        <span>Portfolio</span>
+                    </div>
+                    <p class="default-text text-center">In auctor ex id urna faucibus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas  volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.</p>
+                </div>
+            </div>
+            <div class="portfolio-tabs-wrapper text-center">
+                <div id="tabs-portfolio">
+                    <ul class="portfolio-tabs-nav">
+                        <li class="portfolio-tabs-nav-item">
+                            <a href="#AllWorks">
+                                <span class="icon-title">All Works</span>
+                            </a>
+                        </li>
+                        <li class="portfolio-tabs-nav-item">
+                            <a href="#Branding">
+                                <span class="icon-title">Branding</span>
+                            </a>
+                        </li>
+                        <li class="portfolio-tabs-nav-item">
+                            <a href="#Design">
+                                <span class="icon-title">Design</span>
+                            </a>
+                        </li>
+                        <li class="portfolio-tabs-nav-item">
+                            <a href="#Photography">
+                                <span class="icon-title">Photography</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="AllWorks">
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-1.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-2.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-3.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-4.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-5.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div id="Branding">
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-6.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-5.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-4.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-3.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-2.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-1.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div id="Design">
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-2.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-1.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-3.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-6.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-5.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-4.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div id="Photography">
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-3.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-2.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-1.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-5.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-4.jpg" alt=""></a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="#"><img src="img/tabs-item-6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Like-Our-Creative-Works small-section bg-black">
+            <div class="container-fluid">
+                <div class="title title-white section-title-light text-center">
+                    <span>Like Our Creative Works?</span>
+                    <a href="#" class="btn btn-default">Start Project</a>
+                </div>
+            </div>
+        </div>
         <div class="why-choose-us default-section text-center">
             <div class="container">
                 <div class="title section-title">
@@ -356,6 +575,40 @@
                 </div>
             </div>
         </div>
+        <div class="reviews bg-black">
+            <div class="reviews-carousel">
+                <div>
+                    <div class="slide-content text-center">
+                        <span class="icon icon-quote"></span>
+                        <div class="title section-title-light title-white">
+                            <span>What people say?</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dignissimos similique rem et commodi quia distinctio, repellat voluptatem nisi unde temporibus deserunt possimus earum saepe, repellendus corrupti. Hic, similique quis.</p>
+                        <span class="review-author">- Jhon Doe</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide-content text-center">
+                        <span class="icon icon-quote"></span>
+                        <div class="title section-title-light title-white">
+                            <span>What people say?</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dignissimos similique rem et commodi quia distinctio, repellat voluptatem nisi unde temporibus deserunt possimus earum saepe, repellendus corrupti. Hic, similique quis.</p>
+                        <span class="review-author">- Jhon Doe</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="slide-content text-center">
+                        <span class="icon icon-quote"></span>
+                        <div class="title section-title-light title-white">
+                            <span>What people say?</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dignissimos similique rem et commodi quia distinctio, repellat voluptatem nisi unde temporibus deserunt possimus earum saepe, repellendus corrupti. Hic, similique quis.</p>
+                        <span class="review-author">- Jhon Doe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="latest-news default-section">
             <div class="container">
                 <div class="title section-title">
@@ -405,9 +658,147 @@
                 </div>
             </div>
         </div>
+        <div class="subscribe small-section bg-grey text-center">
+            <div class="container">
+                <div class="title section-title-light">
+                    <span>Stay informed with OUR NEWSLETTER</span>
+                </div>
+                <form>
+                    <input type="email" name="email" class="form-control" placeholder="Enter email here">
+                    <button type="submit" class="btn btn-black">Subscribe</button>
+                </form>
+                <div class="form-info">
+                    <span><i class="fa fa-info-circle"></i> Please trust us, we will never send you spam</span>
+                </div>
+            </div>
+        </div>
+        <div class="contacts default-section">
+            <div class="container">
+                <div class="title section-title text-center">
+                    <span>Contact</span>
+                </div>
+                <div class="row">
+                    <div class="col col-8 m-auto">
+                        <div class="contact-items-wrapper">
+                            <div class="row">
+                                <div class="col col-4">
+                                    <div class="contact-item">
+                                        <div class="rhomb-icon black-icon contact-item-icon">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="contact-item-content">
+                                            <span class="contact-title">Call us</span>
+                                            <span class="contact-data">+380631234567</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-4">
+                                    <div class="contact-item">
+                                        <div class="rhomb-icon black-icon contact-item-icon">
+                                            <i class="fa fa-map-marker"></i>
+                                        </div>
+                                        <div class="contact-item-content">
+                                            <span class="contact-title">Address</span>
+                                            <span class="contact-data">245 Quigley Blvd, Ste K</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-4">
+                                    <div class="contact-item">
+                                        <div class="rhomb-icon black-icon contact-item-icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="contact-item-content">
+                                            <span class="contact-title">Email</span>
+                                            <span class="contact-data">support@bestlooker.pro</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="contact-form">
+                            <div class="form-col">
+                                <input type="text" name="user-name" id="user-name" class="form-control" placeholder="Name">
+                                <input type="text" name="user-emeil" id="user-emeil" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-col">
+                                <textarea name="user-messge" id="user-messge" class="form-control" placeholder="Messge"></textarea>
+                            </div>
+                            <div class="form-info pull-left">
+                                <span><i class="fa fa-info-circle"></i> All the fields are required</span>
+                            </div>
+                            <button type="submit" class="btn btn-black pull-right">Submit Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <div id="map"></div>
+            <div class="on-map-block"></div>
+            <div class="map-icon">
+                <div class="map-icon-content">
+                    <a href="#" class="rhomb-icon wnite-icon">
+                        <i class="fa fa-map-marker"></i>
+                    </a>
+                    <div class="icon-title">
+                        <span>Open the map <i class="fa fa-chevron-down"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
+    <div class="footer bg-grey text-center">
+        <div class="container-fluid">
+            <div class="logo-footer">
+                <a href="#"><img src="./img/logo-footer.png" alt=""></a>
+            </div>
+            <div class="footer-icon">
+                <ul class="footer-nav">
+                    <li>
+                        <a href="#" class="rhomb-icon transparent-icon">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="rhomb-icon transparent-icon">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="rhomb-icon transparent-icon">
+                            <i class="fa fa-behance"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="rhomb-icon transparent-icon">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="rhomb-icon transparent-icon">
+                            <i class="fa fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    <span class="company">© Rhythm 2014</span>
+                    <span>Made with love for great people</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrow-up" data-scroll=".inner">
+        <i class="fa fa-caret-up"></i>
+    </div> 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxHYABDnDtc3uVyCdVBJKeaKS17PMeERA&amp;callback=initMap" async="" defer=""></script>
+    <script src="js/google-maps.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script src="js/header-scroll.js"></script>
+    <script src="js/scroll-to.js"></script>		
     <script src="js/init.js"></script>
 </body>
 </html>

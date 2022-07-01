@@ -37,11 +37,20 @@ button{
     outline: none;
     border: none;
 }
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
 textarea{
     resize: vertical;
 }
 input[type="submit"]{
     cursor: pointer;
+}
+blockquote{
+    margin: 0;
 }
 .header{
     overflow: hidden;
@@ -68,7 +77,7 @@ input[type="submit"]{
     font-weight: 400;
 }
 .header .header-nav li + li{
-    margin-left: 35px;
+    margin-left: 30px;
 }
 .header .header-nav li a:hover{
     background-color: #fff;
@@ -110,12 +119,17 @@ input[type="submit"]{
     display: block;
     opacity: 0.68;
 }
-/*.team-wrapper{
-    overflow: hidden;
-    width: 100%;
-}*/
+.inner-icon{
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    margin-left: -16px;
+}
 .default-section.about-studio{
     border-bottom: 1px solid rgba( 236, 236, 236, .92);
+}
+.team-wrapper{
+    margin-top: 110px;
 }
 .team-item .team-item-img{
     position: relative;
@@ -128,9 +142,67 @@ input[type="submit"]{
     height: 100%;
     background-color: #000;
     transition: all .2s linear;
+    padding: 40px;
 }
 .team-item .team-item-img:hover .team-item-skills{
     opacity: 1;
+}
+.team-item-skills .skills-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    color: #fff;
+    display: block;
+    margin-bottom: 25px;
+}
+.team-item-skills p{
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.skill-item span{
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+.progress-wrapp{
+    width: 100%;
+    height: 12px;
+    background-color: rgba(255, 255, 255, .15);
+    margin-bottom: 10px;
+}
+.progress-wrapp .progress{
+    height: 12px;
+    background-color: rgba(255, 255, 255, .75);
+    width: 0%;
+    transition: width .5s ease-out;
+}
+.progress-wrapp .progress.branding{
+    transition: width .5s ease-out;
+}
+.progress-wrapp .progress.design{
+    transition: width .5s ease-out .2s;
+}
+.progress-wrapp .progress.development{
+    transition: width .5s ease-out .4s;
+}
+.progress-wrapp .progress.photography{
+    transition: width .5s ease-out .6s;
+}
+.team-item .team-item-img:hover .branding{
+    width: 60%;
+}
+.team-item .team-item-img:hover .design{
+    width: 70%;
+}
+.team-item .team-item-img:hover .development{
+    width: 77%;
+}
+.team-item .team-item-img:hover .photography{
+    width: 85%;
 }
 .team-item-info{
     text-align: center;
@@ -140,14 +212,23 @@ input[type="submit"]{
     margin-top: 15px;
 }
 .team-item-name{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
     margin: 0 0 15px;
 }
 .team-item-role{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
     margin: 0 0 15px;
 }
 .latest-news .title.section-title a{
     float: right;
-    line-height: 22px;
     color: #999;
     font-size: 11px;
     letter-spacing: 0.4em;
@@ -200,12 +281,22 @@ blockquote{
 .bg-black{
     background-color: #111;
 }
-.bd-grey{
+.bg-grey{
     background-color: #f8f8f8;
+}
+.m-auto{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
 }
 .default-section{
     padding: 135px 0;
-   /* overflow: hidden;*/
 }
 .small-section{
     padding: 70px 0 ;
@@ -238,6 +329,7 @@ blockquote{
     letter-spacing: .3em;
     margin-bottom: 20px;
     font-weight: 300;
+    line-height: 1.44;
 }
 .default-text{
     font-size: 15px;
@@ -290,7 +382,7 @@ blockquote span,.blockquote span{
     width: 100%;
     border: 1px solid #e5e5e5;
     border-radius: 2px;
-    height: 36px;
+    height: 40px;
     font-size: 12px;
     font-family: 'Open Sans';
     font-weight: 400;
@@ -304,7 +396,7 @@ blockquote span,.blockquote span{
     border-color: #111;
 }
 textarea.form-control{
-    min-height: 82px;
+    min-height: 90px;
     padding-top: 10px;
 }
 .form-control[disabled]{
@@ -313,6 +405,81 @@ textarea.form-control{
 }
 .form-control.error{
     border-color: #f57e7e;
+}
+.form-info{
+    font-size: 11px;
+    font-weight: 400;
+    color: #aaa;
+}
+.form-info .fa{
+    font-size: 12px;
+}
+.rhomb-icon{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+    border-radius: 2px;
+    font-size: 14px;
+    transform: rotate(45deg);
+}
+.rhomb-icon i{
+    transform: rotate(-45deg); 
+}
+.rhomb-icon.black-icon{
+    color: #fff;
+    background-color: #111;
+}
+.rhomb-icon.wnite-icon{
+    color: #222;
+    background-color: #fff;
+}
+.rhomb-icon.transparent-icon{
+    color: #111;
+    border: 1px solid #2d2d2d;
+}
+.arrow-up{
+    font-size: 50px;
+    cursor: pointer;
+    color: #c6c6c6;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+.portfolio p{
+    max-width: 750px;
+    margin: 0 auto;
+}
+.portfolio-tabs-wrapper{
+    overflow: hidden;
+}
+.portfolio-item{
+    float: left;
+    width: 33.3333333%;
+    padding: 0 4px;
+}
+.portfolio-tabs-nav-item.ui-tabs-active .icon-title{
+    color: #000;
+}
+.portfolio-tabs-nav-item .icon-title{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+.portfolio-item img{
+    height: 100%;
+    filter: grayscale(100%);
+    transition: .5s linear;
+}
+.portfolio-item img:hover{
+    height: 100%;
+    filter: grayscale(0%);
+}
+.Like-Our-Creative-Works span{
+    display: block;
+    margin-bottom: 20px;
 }
 .why-choose-us .row + .row{
     margin-top: 75px;
@@ -327,6 +494,88 @@ textarea.form-control{
     letter-spacing: 0.4em;
     margin-bottom: 30px;
 }
+.reviews-carousel{
+    padding: 135px 0;
+    overflow: hidden;
+}
+.slick-dots{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 30px;
+}
+.slick-dots li{
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background-color: rgba( 255, 255, 255, .8);
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slick-dots li button{
+    display: none;
+}
+.slick-dots li + li{
+    margin-left: 5px;
+}
+.slick-dots li.slick-active{
+    background-color: #000;
+    border-color: rgba( 255, 255, 255, .8);
+}
+.slick-arrow{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 90px;
+    z-index: 1;
+    cursor: pointer;
+}
+.slick-arrow.slick-prev{
+    left: 0;
+}
+.slick-arrow.slick-next{
+    right: 0;
+}
+.slick-arrow .carousel-button{
+    width: 63px;
+    height: 63px;
+    background: #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    margin-left: -32px;
+    margin-top: -31px;
+}
+.slick-arrow.slick-next .carousel-button{
+    right: 0;
+    margin-right: -31px;
+}
+.slick-arrow .carousel-button .fa{
+    position: absolute;
+    transform: rotate(45deg);
+    font-size: 10px;
+}
+.slick-arrow.slick-prev .carousel-button .fa{
+    bottom: 14px;
+    right: 17px;
+}
+.slick-arrow.slick-next .carousel-button .fa{
+    top: 17px;
+    left: 14px;
+}
+.slide-content .icon{
+    margin-bottom: 25px;
+}
+.slide-content p{
+    max-width: 740px;
+    display: inline-block;
+    margin-top: 25px;
+}
+.slide-content .review-author{
+    display: block;
+    margin-top: 25px;
+} 
 /*==== Default component  end =====*/
 #tabs .tabs-nav{
     margin-bottom: 75px;
@@ -341,7 +590,6 @@ textarea.form-control{
     font-size: 48px;
     margin-bottom: 35px;
 }
-
 .tabs-nav-item.ui-tabs-active .icon{
     color: #000;
 }
@@ -354,6 +602,21 @@ textarea.form-control{
 #tabs .tabs-nav li span{
     display: block;
 }
+#tabs-portfolio{
+    overflow: hidden;
+}
+.portfolio-tabs-nav{
+    margin-bottom: 50px;
+}
+.portfolio-tabs-nav-item{
+    display: inline-block;
+}
+.portfolio-tabs-nav-item + .portfolio-tabs-nav-item{
+    margin-left: 60px;
+}
+.tabs-nav-item.ui-tabs-active .icon-title{
+    color: #000;
+}
 .lets-talk-content{
     padding: 140px 0;
 }
@@ -363,4 +626,130 @@ textarea.form-control{
 }
 .lets-talk .lets-talk-img{
     margin-top: -32px;
+}
+.subscribe form .form-control{
+    max-width: 290px;
+}
+.subscribe .form-info{
+    margin-top: 17px;
+}
+.contact-items-wrapper{
+    margin-bottom: 80px;
+}
+.contact-item .contact-item-content{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+.contact-item .contact-item-content span{
+    display: block;
+}
+.contact-item-content .contact-title{
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #777;
+    letter-spacing: .3em;
+    font-weight: 400;
+}
+.contact-item-content .contact-data{
+    font-size: 13px;
+    line-height: 1.6;
+    color: #444;
+}
+.contact-form{
+    margin: 0 -5px;
+    overflow: hidden;
+}
+.contact-form .form-col{
+    float: left;
+    width: 50%;
+    padding: 0 5px;
+    margin-bottom: 20px;
+}
+.contact-form .form-control + .form-control{
+    margin-top: 10px;
+}
+.contact-form .form-info{
+    line-height: 36px;
+}
+#map{
+    height: 410px;
+}
+.map-container{
+    position: relative;
+}
+.on-map-block{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    top: 0;
+    left: 0;
+}
+.map-container:hover .on-map-block{
+    display: none;
+}
+
+.map-icon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;    
+    text-align: center;
+}
+.map-icon::before{
+    content: '';
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.map-container:hover .map-icon{
+    display: none;
+}
+.map-icon-content{
+    display: inline-block;
+    text-align: center;
+}
+.map-icon-content a{
+    margin-bottom: 25px;
+}
+.map-icon-content span{
+    font-size: 16px;
+    letter-spacing: 0.3em;
+    font-weight: 400;
+    color: rgba(255, 255, 255,.5);
+    font-family: 'Dosis',sans-serif;
+    text-transform: uppercase;
+} 
+.footer{
+    padding: 140px 0 60px;
+}
+.logo-footer{
+    margin-bottom: 25px;
+}
+.footer-nav{
+    margin-bottom: 100px;
+}
+.footer .footer-nav li{
+    display: inline-block;
+}
+.footer .footer-nav li + li{
+    margin-left: 12px;
+}
+.footer .copyright .company{
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .5em;
+    color: #111;  
+}
+.footer .copyright span{
+    display: block;
+    font-size: 11px;
+    color: #999;
+    font-weight: 400;
+    line-height: 2;
 }
