@@ -63,25 +63,36 @@ blockquote{
 }
 .header .logo{
     float: left;
+    opacity: .9;
 }
 .header .header-nav{
     float: right;
-}
-.header .header-nav li{
-    float: left;
-    line-height: 21px;
     color: rgba( 255, 255, 255, .75);
     text-transform: uppercase;
     font-size: 11px;
     letter-spacing: .3em;
-    font-weight: 400;
+}
+.header .header-nav li{
+    float: left;
+    line-height: 21px;
 }
 .header .header-nav li + li{
-    margin-left: 30px;
+    margin-left: 32px;
 }
 .header .header-nav li a:hover{
     background-color: #fff;
     color: #000;
+}
+.slicknav_menu{
+    display: none;
+}
+@media (max-width: 767px) {
+    .slicknav_menu {
+        display: block;
+    }
+    .header-nav {
+        display: none;
+    }
 }
 .guide-section form .form-control{
     margin-bottom: 10px;
@@ -124,6 +135,19 @@ blockquote{
     bottom: 35px;
     left: 50%;
     margin-left: -16px;
+}
+@media (max-width: 991px) {
+    .inner .inner-content h1{
+        letter-spacing: .7em;
+        text-indent: .7em;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .inner {
+        height: auto;
+        padding: 150px 0;
+    }
 }
 .default-section.about-studio{
     border-bottom: 1px solid rgba( 236, 236, 236, .92);
@@ -227,6 +251,14 @@ blockquote{
     letter-spacing: .2em;
     margin: 0 0 15px;
 }
+@media (max-width: 991px) {
+    .team-item-name{
+        font-size: 12px;
+    }
+    .team-item-role{
+        font-size: 9px;
+    }
+}
 .latest-news .title.section-title a{
     float: right;
     color: #999;
@@ -244,6 +276,16 @@ blockquote{
 }
 .latest-item p{
     margin-bottom: 30px;
+}
+@media (max-width: 991px){
+    .latest-item .latest-item-img img{
+        width: 100%;
+    }
+    .latest-item {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #000;
+    } 
 }
 .news-title{
     margin-bottom: 25px;
@@ -345,6 +387,11 @@ blockquote span,.blockquote span{
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: .2em;
+}
+@media (max-width: 991px) {
+    blockquote {
+        margin-bottom: 30px;
+    }
 }
 .btn{
     display: inline-block;
@@ -477,6 +524,11 @@ textarea.form-control{
     height: 100%;
     filter: grayscale(0%);
 }
+@media (max-width: 991px) {
+    .portfolio-item{
+        width: 50%;
+    }
+}
 .Like-Our-Creative-Works span{
     display: block;
     margin-bottom: 20px;
@@ -493,6 +545,12 @@ textarea.form-control{
     font-weight: normal;
     letter-spacing: 0.4em;
     margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+    .why-choose-us-item{
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 .reviews-carousel{
     padding: 135px 0;
@@ -605,6 +663,17 @@ textarea.form-control{
 #tabs-portfolio{
     overflow: hidden;
 }
+#tabs .tabs-penal{
+    clear: both;
+}
+@media (max-width: 991px) {
+    .tabs-nav-item .icon-title{
+        font-size: 12px;
+    }
+    #tabs .tabs-nav{
+        margin-bottom: 40px;
+    }
+}
 .portfolio-tabs-nav{
     margin-bottom: 50px;
 }
@@ -626,6 +695,12 @@ textarea.form-control{
 }
 .lets-talk .lets-talk-img{
     margin-top: -32px;
+}
+@media (max-width: 991px) {
+    .lets-talk-content{
+        text-align: center;
+        padding: 70px 0;
+    }
 }
 .subscribe form .form-control{
     max-width: 290px;
@@ -659,13 +734,18 @@ textarea.form-control{
 }
 .contact-form{
     margin: 0 -5px;
+}
+.form-row{
+    margin: 0 -5px;
     overflow: hidden;
+}
+.form-submit{
+    margin-top: 20px;
 }
 .contact-form .form-col{
     float: left;
     width: 50%;
     padding: 0 5px;
-    margin-bottom: 20px;
 }
 .contact-form .form-control + .form-control{
     margin-top: 10px;
@@ -752,4 +832,16 @@ textarea.form-control{
     color: #999;
     font-weight: 400;
     line-height: 2;
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 991px) {
+    
+}
+@media (max-width: 767px) {
+    
+}
+@media (max-width: 576px) {
+    
 }
